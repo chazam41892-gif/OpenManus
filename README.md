@@ -88,9 +88,21 @@ uv pip install -r requirements.txt
 playwright install
 ```
 
-## Configuration
+## Registration & Configuration
 
-OpenManus requires configuration for the LLM APIs it uses. Follow these steps to set up your configuration:
+### Quick Setup (Recommended)
+
+Run the interactive setup wizard to register your account and configure your API keys:
+
+```bash
+python register.py
+```
+
+The wizard will guide you through selecting your LLM provider (OpenAI, Anthropic, PPIO, Azure, or Ollama) and entering your API key. It creates `config/config.toml` automatically.
+
+### Manual Configuration
+
+Alternatively, set up the configuration manually:
 
 1. Create a `config.toml` file in the `config` directory (you can copy from the example):
 
